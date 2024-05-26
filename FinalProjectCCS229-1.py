@@ -6,7 +6,7 @@ import streamlit as st
 import openai
 
 #Configure your OpenAI API key
-openai.api_key = 'your_api_key_here'
+openai.api_key = "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"
 
 #Function to get a response from OpenAI's language model
 
@@ -27,7 +27,7 @@ def get_openai_response(user_input):
         return f"An error occurred: {str(e)}"
 
 #Streamlit app layout
-st.title("Your Advanced Streamlit Chatbot")
+st.title("Hola! I'm June Chatbot")
 user_input = st.text_input("What would you like to ask?")
 if st.button("Submit"):
     if user_input:
