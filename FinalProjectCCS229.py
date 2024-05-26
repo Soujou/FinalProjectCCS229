@@ -4,16 +4,22 @@
 import streamlit as st
 import openai
 
+
 #OpenAI API and Streamlit libraries
-openai.api_key = "cm-mZ56JoBm83JbRA1ifrEPiEneT1dDkdOsBoEybn5RCepYdyKfiZT5j1d9emso9wU3"
+openai.api_key = "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"
 st.set_page_config(layout="wide")
+
+#Define the Streamlit app
+def app():
+    st.title('Final Project in Intelligent Systems')
+    st.write('by Angelica Villar of BSCS3A')
 
 #Define the multi-level prompting system
 prompts = [
-    {"prompt": "Please provide a creative idea for a new product.", 
-     "options": ["A new smart home device", "A sustainable fashion line", "A innovative kitchen gadget"]},
+    {"prompt": "Please provide a creative idea for the coffee shop upgrade.", 
+     "options": ["A new vegan coffee", "A limited edition recycled cup", "An innovative kitchen gadget for easy access of orders"]},
     {"prompt": "Please choose one of the following options: ",
-     "options": ["A new smart home device", "A sustainable fashion line", "A innovative kitchen gadget"]}
+     "options": ["A new vegan coffee", "A limited edition recycled cup", "An innovative kitchen gadget for easy access of orders"]}
 ]
 
 #Define the GPT-3 API integration
@@ -23,7 +29,7 @@ gpt3_model = "text-davinci-003"
 def main():
     #Guide the user through the prompting process
     for i, prompt in enumerate(prompts):
-        st.write(f"**Level {i+1}**")
+        st.write(f"**Idea**")
         st.write(f"{prompt['prompt']}")
         selected_option = st.selectbox("Select an option:", prompt["options"])
         st.write(f"Selected option: {selected_option}")
@@ -60,6 +66,7 @@ def main():
         #Display the refined text
         st.write(f"**Refined Text:**")
         st.write(refined_text)
+
 
 if __name__ == "__main__":
     main()
