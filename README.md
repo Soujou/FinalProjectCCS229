@@ -1,1 +1,2 @@
-# FinalProjectCCS229
+Explanation
+By giving staff members a voice in new initiatives and products that can benefit both our customers and the environment, I hope to enhance the overall sustainability and experience of our coffee shop. In addition to satisfying the increasing demand for plant-based goods, we can encourage a more inclusive menu by adding a new vegan coffee option. In addition to lowering waste, the limited-edition recycled cup will provide a platform for marketing initiatives to promote sustainability. It will be simpler for us to handle orders and give our clients better service in the interim thanks to the creative kitchen appliance that will optimize our operations.
